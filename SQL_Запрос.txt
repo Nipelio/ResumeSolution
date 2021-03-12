@@ -1,0 +1,8 @@
+SELECT product_name, category_name FROM
+Products
+LEFT JOIN
+Matches
+ON Products.id = Matches.product_id
+LEFT JOIN
+Category
+ON Mathces.category_id = Category.id
